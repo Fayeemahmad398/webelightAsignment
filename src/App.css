@@ -1,0 +1,160 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: scroll;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.home {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.most-starred-repo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.heading-dark {
+  font-size: 35px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.eachRepo {
+  min-width: 100%;
+}
+.all-selects {
+  padding-right: 16px;
+  display: flex !important;
+  margin-bottom: 10px;
+}
+.all-selects-of-list {
+  padding-right: 14px;
+  align-self: flex-end;
+  height: 40px;
+  border: none;
+  outline: 1px solid grey;
+  border-radius: 2px;
+  color: gray;
+}
+.summaryPart {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 3px grey;
+  align-items: end !important;
+  background: rgb(242, 241, 241) !important;
+}
+.accordian-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 100%;
+}
+.description {
+  box-shadow: 0px 0px 3px gray;
+  min-height: 0px;
+  height: fit-content;
+}
+
+.eachRepo {
+  margin: 20px 0px;
+  position: relative;
+}
+.img-box {
+  height: 100%;
+  width: 130px;
+}
+.img-box img {
+  height: 100%;
+  width: 100%;
+}
+.left-of-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  justify-content: space-between;
+}
+.lower-of-title {
+  display: flex;
+  gap: 80px;
+}
+.stars-issue {
+  display: flex;
+  gap: 20px;
+}
+.stars-issue div {
+  padding: 3px;
+  border: 2px solid rgb(186, 182, 182);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.push-time {
+  font-size: 13px;
+  color: rgb(43, 43, 43);
+}
+.MuiSvgIcon-root {
+  background: rgb(201, 198, 198) !important;
+  border-radius: 15px !important;
+  font-size: 40px !important;
+  opacity: 0.6;
+}
+.MuiSelect-root:focus {
+  outline: none;
+}
+.graph1 {
+  width: 100%;
+  height: 200px;
+  /* overflow: scroll; */
+}
+.line-chart {
+  background: rgb(242, 241, 241) !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 4px !important;
+}
+@media (max-width: 660px) {
+  .lower-of-title {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .img-box {
+    width: 90px;
+  }
+  h4 {
+    font-size: 13px;
+    word-break: break-all;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 35px !important;
+  }
+  h2 {
+    word-break: break-all;
+    font-size: 18px;
+  }
+  .heading-dark {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .accordian-title {
+    flex-direction: column;
+  }
+}
